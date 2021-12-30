@@ -21,7 +21,6 @@ function getPos(index){
 function listSuccessors(start,goal) {
 	let index = start[0].indexOf(0);
 	let arrSuccessors = [];
-	// [start[0], start[1], start[2],start[3],start[4], start[5], start[6], start[7], start[8]],
 	switch (index) {
 		case 0:
 			arrSuccessors = [
@@ -97,8 +96,8 @@ function listSuccessors(start,goal) {
 function hillsuccessors(n, e){
 	let bfsuccessors = listSuccessors(n,e);
 	bfsuccessors.sort((a,b) => a[1] - b[1])
-	// return [bfsuccessors[0]];
-	return bfsuccessors
+	return [bfsuccessors[0]];
+	// return bfsuccessors
 }
 
 
